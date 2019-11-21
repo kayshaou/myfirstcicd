@@ -6,7 +6,7 @@ scripts:
   - docker images anocha/node
   #initial commit
 before_deploy:
-  - docker login -u kayshaoudocker -p ?keisha86?
+  - docker login -u kayshaoudocker -p --password-stdin ?keisha86?
 deploy:
   provider: script
   script: docker push anocha/node
