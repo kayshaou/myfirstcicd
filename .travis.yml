@@ -10,6 +10,7 @@ before_deploy:
 
 deploy:
   provider: script
-  script: docker push kayshaoudocker/node
+  script:
+    - docker push kayshaoudocker/node
   on:
     branch: master
