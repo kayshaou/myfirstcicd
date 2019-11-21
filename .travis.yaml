@@ -1,7 +1,6 @@
 sudo: required
 services:
   - docker
-
 scripts:
   - docker build -t anocha/node .
   - docker images anocha/node
