@@ -9,6 +9,7 @@ before_deploy:
   - docker login -u kayshaoudocker -p ?keisha86?
 deploy:
   provider: script
+  edge: true
   script: docker push anocha/node
   on:
     branch: master
