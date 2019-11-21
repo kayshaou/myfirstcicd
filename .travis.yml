@@ -5,3 +5,11 @@ scripts:
   - docker build -t anocha/node .
   - docker images anocha/node
   #initial commit
+before_deploy:
+  - docker login -u kayshaoudocker -p ?keisha86?
+
+deploy:
+  provider: script
+  script: docker push anocha/node
+  on:
+    branch: master
