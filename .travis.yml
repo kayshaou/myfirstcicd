@@ -7,10 +7,8 @@ scripts:
   #initial commit
 before_deploy:
   - docker login -u kayshaoudocker -p ?keisha86?
-
 deploy:
   provider: script
-  script:
-    - docker push kayshaoudocker/node
+  script: docker push anocha/node
   on:
     branch: master
